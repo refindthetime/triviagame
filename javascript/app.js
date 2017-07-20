@@ -3,19 +3,19 @@ var panel = $("#quiz-location");
 // Questions and answers
 var questions = [{
   question: "1.When Was Jim Carrey Born?",
-  answers: ["July 27, 1962.", "September 1, 1954.", "January 17, 1962.", "June 7, 1977."],
-  correctAnswer: "January 17, 1962."
+   answers: ["July 27, 1962. ", " September 1, 1954. ", " January 17, 1962. ", " June 7, 1977. "],
+  correctAnswer: " January 17, 1962. "
 }, {
   question: "2.What is Jim Carrey's full name?",
-  answers: ["James Eugene Carrey.", "John Sylvester Carrey.", "Jimmy Bruce Carrey.", "Jim Ventura Carrey"],
-  correctAnswer: "James Eugene Carrey."
+  answers: [" James Eugene Carrey. ", " John Sylvester Carrey. ", " Jimmy Bruce Carrey. ", " Jim Ventura Carrey. "],
+  correctAnswer: " James Eugene Carrey. "
 }, {
   question: "3.Which character was not played by Jim Carrey?",
-  answers: ["<img src = image/grinch.gif alt= Grinch width= 100px height= 100px></img>", "<img src = image/hulk.gif alt= Hulk width= 100px height= 100px></img>", "<img src = image/mask.gif alt= Mask width= 100px height= 100px></img>", "<img src = image/riddler.gif alt= Riddler width= 100px height= 100px></img>"],
-  correctAnswer: "<img src = image/hulk.gif alt= Hulk width= 100px height= 100px></img>"
+  answers: [" <img src = image/grinch.gif alt= Grinch width= 100px height= 100px></img> ", " <img src = image/hulk.gif alt= Hulk width= 100px height= 100px></img> ", "<img src = image/mask.gif alt= Mask width= 100px height= 100px></img> ", "<img src = image/riddler.gif alt= Riddler width= 100px height= 100px></img> "],
+  correctAnswer: " <img src = image/hulk.gif alt= Hulk width= 100px height= 100px></img> "
 }, {
   question: "4.How many Ocsars has Jim Carrey been awarded?",
-  answers: ["5.", "10.", "More than  Leonardo DiCaprio.", "Less than  Leonardo DiCaprio."],
+  answers: [" 5. ", " 10. ", " More than  Leonardo DiCaprio. ", " Less than  Leonardo DiCaprio. "],
   correctAnswer: "Less than  Leonardo DiCaprio."
 }];
 
@@ -52,7 +52,7 @@ var game = {
       }
     }
 
-    panel.append("<br><br> <button id='done'>Done</button>");
+    panel.append("<br><br> <button class= 'btn-primary' id='done'>Done</button>");
   },
 //check responses here
   done: function() {
@@ -142,7 +142,8 @@ var game = {
     panel.html("<h2>All Done!</h2>");
     panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
     panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
-    panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+    panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>" +"<br>" + "Click the Title of the Quiz for More Fun!");
+
   
   }
 };

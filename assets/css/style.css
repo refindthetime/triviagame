@@ -29,8 +29,20 @@ text-align: center;
 text-shadow: 2px 2px black;
 }
 
-
+#quiz-location{
+	font-size: 20pt;
+}
 button {
 width: 100px;
 margin-top: 20px;
+}
+
+#start {
+	font-size: 20pt;
+}
+#gif{
+	text-shadow: 2px 2px lightgrey;
+	font-style: bold;
+	font-size: 20pt;
+
 }
