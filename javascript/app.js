@@ -36,7 +36,7 @@ var game = {
       game.done();
     }
   },
-//timer function once start is pressed
+//timer function once start is commenced
   start: function() {
     timer = setInterval(game.countdown, 1000);
 
