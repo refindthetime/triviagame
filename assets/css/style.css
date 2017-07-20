@@ -1,7 +1,7 @@
 body {
 background-image: url("../../image/jim.jpg");
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: 100%;
 font-family: Helvetica;
 }
 
@@ -26,6 +26,7 @@ background-repeat: no-repeat;
 background-size: 100% 100%;
 color: white;
 text-align: center;
+text-shadow: 2px 2px black;
 }
 
 
