@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<title>Jim Carrey Trivia Quiz</title>
+</head>
+<body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
+<h1>Jim Carrey Trivia Quiz</h1>
+</div><!-- close header div -->
+<!--start of questions-->
+<form id="form1">
+<fieldset>
+<h2>When Was Jim Carrey Born??</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" />July 27, 1962.</label>
+<label for="var_join"><input type="radio" name="variable" value="0" />September 1, 1954.</label>
+<label for="var_info"><input type="radio" name="variable" value="25" />January 17, 1962.</label>
+<label for="var_condition"><input type="radio" name="variable" value="0" />June 7, 1977.</label>
+
+<h2>What is Jim Carrey's full name?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="25" />James Eugene Carrey.</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" />John Sylvester Carrey.</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" />Jim Ventura Carrey</label>
+<label for="sub_condition"><input type="radio" name="sub" value="0" />Jimmy Bruce Carrey.</label>
+
+<h2>Which character was not played by Jim Carrey?</h2>
+<label for="cat_string"><input type="radio" name="con" value="0" /><img src="image/grinch.gif" alt="Grinch" width="100px" height="100px"></label>
+<label for="cat_join"><input type="radio" name="con" value="25" /><img src="image/hulk.gif" alt="Hulk"  width="100px" height="100px"></label>
+<label for="cat_info"><input type="radio" name="con" value="0" /><img src="image/mask.gif" alt="Mask"  width="100px" height="100px"></label>
+<label for="cat_condition"><input type="radio" name="con" value="0" /><img src="image/riddler.gif" alt="Riddler"  width="100px" height="100px"></label>
+
+<h2>How many Ocsars has Jim Carrey been awarded?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" />5.</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" />10.</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" />More than  Leonardo DiCaprio.</label>
+<label for="if_condition"><input type="radio" name="ifstate" value="25" />Less than  Leonardo DiCaprio.</label>
+
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+
+
+
+</div><!-- close main div -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
