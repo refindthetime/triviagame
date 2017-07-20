@@ -143,6 +143,7 @@ var game = {
     panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
     panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
     panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+  
   }
 };
 
